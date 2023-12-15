@@ -1,0 +1,46 @@
+.benefit-box {
+  margin-top: 1rem;
+  background-color: var(--primary);
+  border-radius: 2%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.icon-element {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-box {
+  color: var(--text);
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--secondary);
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.title-element {
+  color: var(--background);
+  font-size: 1.2rem;
+}
+
+.description-element {
+  color: var(--text);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+.button-element {
+  color: var(--background);
+  transition: color 0.7s ease-in-out;
+}
+
+.button-element:hover {
+  color: var(--text);
+}

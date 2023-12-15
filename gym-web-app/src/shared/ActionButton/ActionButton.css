@@ -1,0 +1,15 @@
+.action-button {
+  color: var(--text);
+  background-color: var(--secondary);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border-style: none;
+  transition: all 0.7s ease-in-out;
+  transition-property: color, background-color;
+}
+
+.action-button:hover {
+  cursor: pointer;
+  color: var(--background);
+  background-color: var(--text);
+}

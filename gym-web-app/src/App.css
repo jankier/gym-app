@@ -1,0 +1,22 @@
+:root {
+  --text: #e7f2e7;
+  --background: #040704;
+  --primary: #a3cfa5;
+  --secondary: #3d755f;
+  --acent: #67b0a4;
+}
+
+body {
+  background-color: #e7f2e7;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

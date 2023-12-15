@@ -1,0 +1,141 @@
+.header {
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  background-color: var(--primary);
+}
+
+.header-not-on-top {
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  background-color: var(--primary);
+  box-shadow: 0px 20px 50px -5px var(--accent);
+}
+
+.left-side-h {
+  display: flex;
+}
+
+.logo {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > :nth-child(2) {
+  padding-left: 1rem;
+  font-size: 2rem;
+  color: var(--text);
+}
+
+.logo > span > :nth-child(1) {
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  -webkit-text-stroke-color: var(--text);
+}
+
+.logo-img {
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+.right-side-h {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  padding: 1.5rem;
+}
+
+.header-navbar {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text);
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.sign-in > button {
+  background-color: var(--acent);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+}
+
+.right-side-h-navbar {
+  display: flex;
+  padding: 2rem;
+}
+
+.menu-button {
+  color: var(--text);
+  cursor: pointer;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--secondary);
+  border-radius: 100%;
+  border-style: none;
+  transition: all 0.7s ease-in-out;
+  transition-property: color, background-color;
+}
+
+.menu-button:hover {
+  background-color: var(--text);
+  color: var(--background);
+}
+
+.dropdown-menu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 40;
+  width: 20rem;
+  background-color: var(--primary);
+  box-shadow: 0px 20px 50px -5px var(--secondary);
+}
+
+.menu-close-button {
+  display: flex;
+  justify-content: end;
+  padding: 1.5rem;
+}
+
+.close-button {
+  border: none;
+  color: var(--text);
+  background-color: var(--primary);
+  cursor: pointer;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  transition: color 0.7s ease-in-out;
+}
+
+.close-button:hover {
+  color: var(--background);
+}
+
+.header-navbar-dropdown {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 3rem;
+  margin-left: 5rem;
+}
