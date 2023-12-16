@@ -16,7 +16,8 @@ const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
       className={`${
         selectedPage === lowerCasePage ? "selected-page" : "list-element"
       }`}
-      href={lowerCasePage}
+      offset="97"
+      href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
       {page}

@@ -1,6 +1,7 @@
 import "./Benefits.css";
 import { SelectedPage, BenefitType } from "../../shared/types";
 import { motion } from "framer-motion";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import Benefit from "./Benefit/Benefit";
 import body_builder_benefits from "../../assets/body-builder-benefits.png";
 
@@ -73,7 +74,7 @@ const benefits: Array<BenefitType> = [
 const container = {
   hidden: {},
   visible: {
-    transition: { staggerChildren: 0.3 },
+    transition: { staggerChildren: 0.8 },
   },
 };
 
@@ -82,6 +83,8 @@ type Props = {
 };
 
 const Benefits = ({ setSelectedPage }: Props) => {
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+
   return (
     <div id="benefits" className="benefits-section">
       <motion.div
@@ -111,7 +114,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           className="benefits-list"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.9 }}
+          viewport={{ once: true, amount: 0.5 }}
           variants={container}
         >
           {benefits.map((benefit: BenefitType) => (
@@ -133,7 +136,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               className="right-side-benefits"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: isAboveMediumScreens ? 1 : 0.5 }}
               transition={{ duration: 1 }}
               variants={{
                 hidden: { opacity: 0, x: 50 },
@@ -142,19 +145,15 @@ const Benefits = ({ setSelectedPage }: Props) => {
             >
               <div className="benefits-title">
                 <span>WELCOME TO YOUR FITNESS SANCTUARY</span>
-                <span>THE ULTIMATE GYM EXPERIENCE AWAITS YOU</span>
               </div>
               <div className="benefits-description">
                 <p>
                   At <span>GYMBROS</span>, we believe that fitness is not just a
                   destination, it's a journey. Whether you're a seasoned pro or
                   just starting, our gym is your canvas to sculpt the best
-                  version of yourself.
-                </p>
-                <p>
-                  It's time to rise above the ordinary and embrace the
-                  extraordinary. <span>GYMBROS</span> is not just a brand, it's
-                  a lifestyle. Are you ready to join the revolution?
+                  version of yourself. It's time to rise above the ordinary and
+                  embrace the extraordinary. <span>GYMBROS</span> is not just a
+                  brand, it's a lifestyle.
                 </p>
               </div>
             </motion.div>

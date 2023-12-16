@@ -1,4 +1,3 @@
-// import React from "react";
 import logo from "../../assets/gym-logo-white.png";
 import "./Header.css";
 import Link from "./Link/Link";

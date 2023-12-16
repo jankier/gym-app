@@ -6,6 +6,7 @@
   border-style: none;
   transition: all 0.7s ease-in-out;
   transition-property: color, background-color;
+  text-decoration: none;
 }
 
 .action-button:hover {

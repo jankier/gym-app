@@ -13,6 +13,8 @@ const ActionButton = ({ children, setSelectedPage }: Props) => {
     <AnchorLink
       className="action-button"
       onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+      // offset="97"
+      href={"#contactus"}
     >
       {children}
     </AnchorLink>

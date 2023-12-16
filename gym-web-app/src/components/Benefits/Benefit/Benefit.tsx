@@ -4,7 +4,7 @@ import "./Benefit.css";
 import { motion } from "framer-motion";
 
 const childVariant = {
-  hidden: { opacity: 0, scale: 0.9 },
+  hidden: { opacity: 0, scale: 0.5 },
   visible: { opacity: 1, scale: 1 },
 };
 

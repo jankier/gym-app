@@ -4,13 +4,14 @@
     padding-bottom: 0;
   }
   .home-section-text-img {
-    margin-top: 5rem !important;
+    margin-top: 3rem !important;
     display: flex;
     height: 80%;
     border-bottom: none !important;
   }
   .left-side-home {
     flex-basis: 60%;
+    box-shadow: -40px -40px 0px 0px var(--secondary);
   }
   .right-side-home {
     width: 100%;
