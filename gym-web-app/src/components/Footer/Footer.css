@@ -101,9 +101,20 @@
 }
 
 .third-section > :nth-child(2) {
+  user-select: text;
   font-size: 1rem;
 }
 
+.third-section > :nth-child(2)::selection {
+background-color: var(--secondary);
+}
+
 .third-section > :nth-child(3) {
+  user-select: text;
+  user-select;
   font-size: 1rem;
 }
+
+.third-section > :nth-child(3)::selection {
+  background-color: var(--secondary);
+  }
