@@ -140,14 +140,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 autoComplete="off"
                 {...register("email", {
                   required: true,
-                  pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
                 })}
               />
               {errors.email && (
                 <p className="form-error">
                   {errors.email.type === "required" &&
                     "This field is required."}
-                  {errors.email.type === "pattern" && "Invakid email adress."}
+                  {errors.email.type === "pattern" && "Invalid email adress."}
                 </p>
               )}
               <textarea
