@@ -94,7 +94,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           className="header-benefits"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 1 }}
           transition={{ duration: 1 }}
           variants={{
             hidden: { opacity: 0, y: -50 },
@@ -114,7 +114,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           className="benefits-list"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: isAboveMediumScreens ? 0.5 : 0.3 }}
+          viewport={{ once: true, amount: isAboveMediumScreens ? 1 : 0.3 }}
           variants={container}
         >
           {benefits.map((benefit: BenefitType) => (

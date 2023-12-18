@@ -80,7 +80,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 <p className="join-now-error">
                   {errors2.email.type === "required" &&
                     "This field is required."}
-                  {errors2.email.type === "pattern" && "Invalkid email adress."}
+                  {errors2.email.type === "pattern" && "Invalid email adress."}
                 </p>
               )}
               <input
@@ -147,7 +147,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 <p className="form-error">
                   {errors.email.type === "required" &&
                     "This field is required."}
-                  {errors.email.type === "pattern" && "Invalkid email adress."}
+                  {errors.email.type === "pattern" && "Invakid email adress."}
                 </p>
               )}
               <textarea
