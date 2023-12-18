@@ -48,6 +48,7 @@ const Home = ({ setSelectedPage }: Props) => {
               and all this with your best buddy.
             </span>
           </div>
+
           <div className="join-now-button">
             <ActionButton
               setSelectedPage={() => setSelectedPage(SelectedPage.ContactUs)}

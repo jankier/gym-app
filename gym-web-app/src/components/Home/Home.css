@@ -10,12 +10,8 @@
     border-bottom: none !important;
   }
   .left-side-home {
-    flex-basis: 60%;
+    flex-basis: 30% !important;
     box-shadow: -40px -40px 0px 0px var(--secondary);
-  }
-  .right-side-home {
-    width: 100%;
-    height: auto;
   }
   .sponsors-home {
     background-color: var(--primary);
@@ -46,13 +42,13 @@
 }
 
 .left-side-home {
-  max-width: 400px;
   border-radius: 2%;
   padding: 2rem;
   background-color: var(--primary);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  flex-basis: 30%;
 }
 
 .logo-text-home {
@@ -83,10 +79,10 @@
   margin-top: 4rem;
   display: flex;
   justify-content: center;
-  max-width: 555px;
 }
 
 .right-side-home > img {
+  max-width: 555px;
   width: 100%;
   height: auto;
 }
