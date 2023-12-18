@@ -96,7 +96,10 @@ const Plans = ({ setSelectedPage }: Props) => {
 
   return (
     <div id="plans" className="plans-section">
-      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Plans)}>
+      <motion.div
+        className="plans-elements"
+        onViewportEnter={() => setSelectedPage(SelectedPage.Plans)}
+      >
         <div className="plans-header">
           <motion.div
             initial="hidden"

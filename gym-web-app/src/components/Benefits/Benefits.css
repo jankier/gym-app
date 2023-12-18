@@ -17,8 +17,6 @@
     height: 80%;
   }
   .left-side-benefits {
-    width: 100%;
-    height: auto;
     border-bottom: none !important;
   }
   .right-side-benefits {
@@ -71,7 +69,7 @@
 }
 
 .benefits-text-img {
-  min-width: 400px;
+  min-width: 300px;
   margin-top: 3rem;
   margin-bottom: auto;
   margin-left: auto;
@@ -85,8 +83,6 @@
   display: flex;
   justify-content: center;
   border-bottom: 2px solid var(--primary);
-  min-width: 400px;
-  max-width: 555px;
 }
 
 .left-side-benefits > img {
