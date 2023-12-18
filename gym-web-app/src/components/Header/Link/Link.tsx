@@ -5,10 +5,18 @@ import { SelectedPage } from "../../../shared/types";
 type Props = {
   page: string;
   selectedPage: SelectedPage;
+  isMenuToggled: boolean;
+  setIsMenuToggled: (isMenuToggled: boolean) => void;
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
+const Link = ({
+  page,
+  selectedPage,
+  isMenuToggled,
+  setIsMenuToggled,
+  setSelectedPage,
+}: Props) => {
   const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
 
   return (
@@ -18,7 +26,10 @@ const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
       }`}
       offset="97"
       href={`#${lowerCasePage}`}
-      onClick={() => setSelectedPage(lowerCasePage)}
+      onClick={() => {
+        setSelectedPage(lowerCasePage);
+        setIsMenuToggled(!isMenuToggled);
+      }}
     >
       {page}
     </AnchorLink>

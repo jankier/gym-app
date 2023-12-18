@@ -36,21 +36,29 @@ const Header = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               <Link
                 page="HOME"
                 selectedPage={selectedPage}
+                isMenuToggled={isMenuToggled}
+                setIsMenuToggled={setIsMenuToggled}
                 setSelectedPage={setSelectedPage}
               />
               <Link
                 page="BENEFITS"
                 selectedPage={selectedPage}
+                isMenuToggled={isMenuToggled}
+                setIsMenuToggled={setIsMenuToggled}
                 setSelectedPage={setSelectedPage}
               />
               <Link
                 page="PLANS"
                 selectedPage={selectedPage}
+                isMenuToggled={isMenuToggled}
+                setIsMenuToggled={setIsMenuToggled}
                 setSelectedPage={setSelectedPage}
               />
               <Link
                 page="CONTACT US"
                 selectedPage={selectedPage}
+                isMenuToggled={isMenuToggled}
+                setIsMenuToggled={setIsMenuToggled}
                 setSelectedPage={setSelectedPage}
               />
             </ul>
@@ -111,21 +119,29 @@ const Header = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <Link
               page="HOME"
               selectedPage={selectedPage}
+              isMenuToggled={isMenuToggled}
+              setIsMenuToggled={setIsMenuToggled}
               setSelectedPage={setSelectedPage}
             />
             <Link
               page="BENEFITS"
               selectedPage={selectedPage}
+              isMenuToggled={isMenuToggled}
+              setIsMenuToggled={setIsMenuToggled}
               setSelectedPage={setSelectedPage}
             />
             <Link
               page="PLANS"
               selectedPage={selectedPage}
+              isMenuToggled={isMenuToggled}
+              setIsMenuToggled={setIsMenuToggled}
               setSelectedPage={setSelectedPage}
             />
             <Link
               page="CONTACT US"
               selectedPage={selectedPage}
+              isMenuToggled={isMenuToggled}
+              setIsMenuToggled={setIsMenuToggled}
               setSelectedPage={setSelectedPage}
             />
           </ul>
