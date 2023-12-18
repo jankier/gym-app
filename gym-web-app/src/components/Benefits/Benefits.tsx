@@ -114,7 +114,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           className="benefits-list"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: isAboveMediumScreens ? 0.5 : 0.3 }}
           variants={container}
         >
           {benefits.map((benefit: BenefitType) => (
@@ -136,7 +136,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               className="right-side-benefits"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: isAboveMediumScreens ? 1 : 0.5 }}
+              viewport={{ once: true, amount: isAboveMediumScreens ? 1 : 0.4 }}
               transition={{ duration: 1 }}
               variants={{
                 hidden: { opacity: 0, x: 50 },

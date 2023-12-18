@@ -142,7 +142,7 @@ const Plans = ({ setSelectedPage }: Props) => {
           className="plans"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: isAboveMediumScreens ? 1 : 0.4 }}
+          viewport={{ once: true, amount: isAboveMediumScreens ? 1 : 0.3 }}
           variants={container}
         >
           {plans.map((plan: PlanType) => (
