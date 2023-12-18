@@ -44,7 +44,7 @@
 .plans {
   display: flex;
   flex-direction: column;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
   padding-top: 2rem;
   align-items: center;
   justify-content: center;

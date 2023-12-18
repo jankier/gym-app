@@ -25,7 +25,7 @@ const plans: Array<PlanType> = [
     title: "BASIC PLAN",
     price: "25",
     features: [
-      "Access to gym during standard hours.",
+      "Standard hours gym access.",
       "Use of basic exercise equipment.",
       "Locker room and shower facilities.",
     ],
@@ -75,7 +75,7 @@ const plans: Array<PlanType> = [
     features: [
       "24/7 access to the gym.",
       "Personalized workout plans.",
-      "Towel service and upgraded locker room.",
+      "Towel service, own locker room.",
     ],
   },
 ];
