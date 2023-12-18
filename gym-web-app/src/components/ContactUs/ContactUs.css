@@ -2,26 +2,38 @@
   .contact-us-section {
     display: flex;
   }
-  .contact-us-header {
-    padding-left: 6rem !important;
-    width: 51% !important;
+  .contact-us-header-text {
+    width: 50% !important;
   }
-  .contact-us-header > :nth-child(1) {
-    text-align: start !important;
+  .contact-us-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+  }
+  .contact-us-subtitle {
+    padding-bottom: 0 !important;
+  }
+  .form-join-now {
+    display: flex;
+    flex-direction: row !important;
+    gap: 0.7rem;
   }
   .form-elements {
     display: flex;
   }
   .form {
     align-items: start !important;
-    padding-left: 6rem !important;
-    padding-right: 6rem !important;
+  }
+  .form-input {
+    width: 100% !important;
+  }
+  .form-input-message {
+    width: 100% !important;
   }
   .form-img {
-    display: flex;
-    justify-content: space-around !important;
     width: 100%;
     height: auto;
+    justify-content: end !important;
   }
   .form-img > div > :nth-child(1) {
     box-shadow: 40px -40px 0px 0px var(--primary);
@@ -29,15 +41,13 @@
 }
 
 .contact-us-section {
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 4rem;
   padding-bottom: 4rem;
   user-select: none;
-  flex-basis: 60%;
-}
-
-.contact-us-header {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  width: 80%;
 }
 
 .contact-us-header > :nth-child(1) {
@@ -54,22 +64,65 @@
   color: var(--secondary);
 }
 
-.contact-us-title > :nth-child(2n + 1) {
+.contact-us-title {
+  gap: 0.5rem;
+}
+
+.contact-us-subtitle {
+  padding-bottom: 1rem;
+}
+
+.contact-us-subtitle > :nth-child(2n + 1) {
   -webkit-text-stroke-width: 1px;
   color: transparent;
   -webkit-text-stroke-color: var(--background);
 }
 
+.form-elements {
+  gap: 6rem;
+}
+
+.form-join-now {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.join-now-input {
+  font-size: 1rem;
+  display: flex;
+  background-color: var(--secondary);
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--background);
+  height: 3rem;
+  border-radius: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 84%;
+}
+
+.join-now-input::placeholder {
+  color: var(--text);
+}
+
+.join-now-error {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--primary);
+}
+
 .contact-us-form {
   padding-top: 2rem;
+  gap: 10rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  padding-left: 4rem;
-  padding-right: 8rem;
-  justify-content: center;
+  align-items: center;
   gap: 0.7rem;
   padding-bottom: 4rem;
   height: 100%;
@@ -86,7 +139,7 @@
   border-radius: 10px;
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 100%;
+  width: 84%;
 }
 
 .form-input::placeholder {
@@ -110,7 +163,7 @@
   padding-right: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  width: 100%;
+  width: 84%;
 }
 
 .form-input-message::placeholder {
@@ -124,6 +177,7 @@
 }
 
 .form-error {
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--primary);
@@ -149,11 +203,11 @@
 .form-img {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
 .form-img > div > :nth-child(1) {
   border-radius: 4%;
-  width: 100%;
-  height: auto;
   max-width: 400px;
 }

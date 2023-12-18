@@ -27,6 +27,7 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
         className="button-element"
         onClick={() => setSelectedPage(SelectedPage.ContactUs)}
         href={`#${SelectedPage.ContactUs}`}
+        offset="97"
       >
         Learn more
       </AnchorLink>
