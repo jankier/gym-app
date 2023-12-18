@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { SelectedPage } from "../../shared/types";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import "./ContactUs.css";
 import body_builder_form from "../../assets/body-builder-form.png";
 
@@ -9,6 +10,8 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+
   const {
     register,
     trigger,
@@ -103,7 +106,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             className="form-elements"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: isAboveMediumScreens ? 0.5 : 0.3 }}
             transition={{ duration: 1 }}
             variants={{
               hidden: { opacity: 0, y: 50 },
