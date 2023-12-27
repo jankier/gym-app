@@ -63,10 +63,34 @@ const Home = ({ setSelectedPage }: Props) => {
       </motion.div>
       {isAboveMediumScreens && (
         <div className="sponsors-home">
-          <img src={adidas_logo} alt="adidas logo"></img>
-          <img src={kfd_logo} alt="kfd logo"></img>
-          <img src={strefa_mocy_logo} alt="strefa mocy logo"></img>
-          <img src={wk_dzik_logo} alt="wk dzik logo"></img>
+          <ul className="marquee-content">
+            <li>
+              <img src={adidas_logo} alt="adidas logo"></img>
+            </li>
+            <li>
+              <img src={kfd_logo} alt="kfd logo"></img>
+            </li>
+            <li>
+              <img src={strefa_mocy_logo} alt="strefa mocy logo"></img>
+            </li>
+            <li>
+              <img src={wk_dzik_logo} alt="wk dzik logo"></img>
+            </li>
+          </ul>
+          <ul className="marquee-content" aria-hidden="true">
+            <li>
+              <img src={adidas_logo} alt="adidas logo"></img>
+            </li>
+            <li>
+              <img src={kfd_logo} alt="kfd logo"></img>
+            </li>
+            <li>
+              <img src={strefa_mocy_logo} alt="strefa mocy logo"></img>
+            </li>
+            <li>
+              <img src={wk_dzik_logo} alt="wk dzik logo"></img>
+            </li>
+          </ul>
         </div>
       )}
     </div>
