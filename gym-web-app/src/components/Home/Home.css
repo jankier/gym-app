@@ -29,7 +29,12 @@
     display: flex;
     user-select: none;
     gap: 5rem;
+    overflow-x: hidden;
   }
+
+  .sponsors-home > :nth-child(2) {
+  }
+
   .marquee-content {
     flex-shrink: 0;
     display: flex;

@@ -8,6 +8,7 @@
 
 body {
   background-color: #e7f2e7;
+  scroll-padding-top: 97px;
 }
 
 .App {
@@ -18,5 +19,14 @@ body {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 5px;
 }
